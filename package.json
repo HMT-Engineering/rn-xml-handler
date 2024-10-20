@@ -1,6 +1,6 @@
 {
   "name": "rn-xml-handler",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "A simple XML Decoder and Encoder for React Native (and Expo)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

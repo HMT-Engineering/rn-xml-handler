@@ -57,9 +57,9 @@ export class XMLParser {
       /([^\s]*)=('([^']*?)'|"([^"]*?)")|([\/?\w\-\:]+)/g
     );
     if (cleanTagText !== null && cleanTagText !== undefined) {
-      let tag: XMLTag = new XMLTag(
-        cleanTagText.shift()?.replace(/\/\s*$/, "") ?? ""
-      );
+      let tag: XMLTag = new XMLTag({
+        name: cleanTagText.shift()?.replace(/\/\s*$/, "") ?? "",
+      });
 
       cleanTagText.map((attribute) => {
         let attributeKeyVal = attribute.split("=");

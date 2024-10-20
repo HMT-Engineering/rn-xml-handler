@@ -3,12 +3,17 @@ export class XMLTag {
   attributes: Record<string, string>;
   children: XMLTag[];
   value: string;
-  constructor(
-    name: string,
-    attributes?: Record<string, string>,
-    children?: XMLTag[],
-    value?: string
-  ) {
+  constructor({
+    name,
+    attributes,
+    children,
+    value,
+  }: {
+    name: string;
+    attributes?: Record<string, string>;
+    children?: XMLTag[];
+    value?: string;
+  }) {
     this.name = name;
     this.attributes = attributes ?? {};
     this.children = children ?? [];
