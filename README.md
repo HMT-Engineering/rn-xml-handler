@@ -93,7 +93,7 @@ Methods that are currently supported:
 
 2. toString(XML object): Returns text representation of an input XML.
 
-3. getElementsByTagName(string): Returns all tags with the same name as the method's input string (case-insensitive). for all possible tags, use '*' as input.
+3. getElementsByTagName(string): Returns all tags with the same name as the method's input string (case-insensitive). for all possible tags, use '\*' as input.
 
 # License
 
